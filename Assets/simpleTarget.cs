@@ -30,8 +30,9 @@ public class simpleTarget : MonoBehaviour
             {
                 count++;
             }
+            agent.SetDestination(goals[count].position);
         }
-        agent.SetDestination(goals[count].position);
+       
 
     }
 }
