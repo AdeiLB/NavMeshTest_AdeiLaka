@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
         var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
         RaycastHit raycastHit;
         
-        if(Physics.Raycast(ray,out raycastHit))
+        if(Physics.Raycast(ray,out raycastHit)&&Input.GetMouseButton(0))
         {
             navMesagent.SetDestination(raycastHit.point);
         }
