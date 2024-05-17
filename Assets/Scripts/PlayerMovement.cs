@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -22,5 +23,19 @@ public class PlayerMovement : MonoBehaviour
         {
             navMesagent.SetDestination(raycastHit.point);
         }
+    }
+
+    private void OnMouseDown()
+    {
+        if(Input.GetMouseButton(1))
+        {
+            //attack
+        }
+    }
+
+
+    public void die()
+    {
+        SceneManager.LoadScene(0);
     }
 }

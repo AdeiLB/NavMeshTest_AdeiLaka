@@ -2065,9 +2065,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100054, guid: e49337761d3915044979621bd32ebf79, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 100064, guid: e49337761d3915044979621bd32ebf79, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 100064, guid: e49337761d3915044979621bd32ebf79, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 400064, guid: e49337761d3915044979621bd32ebf79, type: 3}
       propertyPath: m_RootOrder
@@ -2124,6 +2132,14 @@ PrefabInstance:
     - target: {fileID: 400064, guid: e49337761d3915044979621bd32ebf79, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2300000, guid: e49337761d3915044979621bd32ebf79, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: e49337761d3915044979621bd32ebf79, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 13700000, guid: e49337761d3915044979621bd32ebf79, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -3182,7 +3198,7 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 0.63
   m_Center: {x: 0, y: 1, z: 0}
 --- !u!114 &283069636
 MonoBehaviour:
@@ -22976,7 +22992,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 4
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120

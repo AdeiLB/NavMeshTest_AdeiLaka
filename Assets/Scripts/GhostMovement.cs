@@ -42,7 +42,12 @@ public class GhostMovement : MonoBehaviour
             playerNear = true;
         }
 
-        
+        if (distance < 5)
+        {
+            playerNear = false;
+        }
+
+
     }
 
     private void normalPhating()
@@ -60,4 +65,15 @@ public class GhostMovement : MonoBehaviour
             agent.SetDestination(pathPositions[count].transform.position);
         }
     }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        Debug.Log("Colision detetcada");
+        if (collision.gameObject.GetComponent<PlayerMovement>() != null)
+        {
+            
+            collision.gameObject.GetComponent<PlayerMovement>().die();
+        }
+    }
+
 }
