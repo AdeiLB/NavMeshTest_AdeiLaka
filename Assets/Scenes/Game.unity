@@ -1184,6 +1184,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4208170194752894, guid: e962c631de953c14b8fff30aeb78c38c, type: 3}
   m_PrefabInstance: {fileID: 83618637}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &85799737 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1456643038206160, guid: e962c631de953c14b8fff30aeb78c38c, type: 3}
+  m_PrefabInstance: {fileID: 515147963}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &86932728
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,6 +3229,11 @@ NavMeshAgent:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4022645006375720, guid: 8a39d6901220e4e789f56eecac5806f0, type: 3}
   m_PrefabInstance: {fileID: 1112461301}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &286019812 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1456643038206160, guid: e962c631de953c14b8fff30aeb78c38c, type: 3}
+  m_PrefabInstance: {fileID: 547217357}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &292306206
 PrefabInstance:
@@ -6152,6 +6162,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4208170194752894, guid: e962c631de953c14b8fff30aeb78c38c, type: 3}
   m_PrefabInstance: {fileID: 515147963}
   m_PrefabAsset: {fileID: 0}
+--- !u!191 &515147968
+OffMeshLink:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85799737}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_AreaIndex: 0
+  m_AgentTypeID: 0
+  m_Start: {fileID: 1223823434}
+  m_End: {fileID: 1281862369}
+  m_CostOverride: -1
+  m_BiDirectional: 1
+  m_Activated: 1
+  m_AutoUpdatePositions: 0
 --- !u!1001 &521644799
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6519,6 +6546,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4208170194752894, guid: e962c631de953c14b8fff30aeb78c38c, type: 3}
   m_PrefabInstance: {fileID: 547217357}
   m_PrefabAsset: {fileID: 0}
+--- !u!191 &547217362
+OffMeshLink:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 286019812}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_AreaIndex: 0
+  m_AgentTypeID: 0
+  m_Start: {fileID: 1315879044}
+  m_End: {fileID: 1517206017}
+  m_CostOverride: -1
+  m_BiDirectional: 1
+  m_Activated: 1
+  m_AutoUpdatePositions: 0
 --- !u!1001 &566079149
 PrefabInstance:
   m_ObjectHideFlags: 0
