@@ -9,6 +9,7 @@ public class GhostMovement : MonoBehaviour
     public bool playerNear;
 
     public GameObject player;
+  
 
     private NavMeshAgent agent;
     private int count;
@@ -42,7 +43,7 @@ public class GhostMovement : MonoBehaviour
             playerNear = true;
         }
 
-        if (distance < 5)
+        if (distance > 5)
         {
             playerNear = false;
         }
@@ -71,8 +72,15 @@ public class GhostMovement : MonoBehaviour
         Debug.Log("Colision detetcada");
         if (collision.gameObject.GetComponent<PlayerMovement>() != null)
         {
-            
-            collision.gameObject.GetComponent<PlayerMovement>().die();
+            if(collision.gameObject.GetComponent<PlayerMovement>().attacking)
+            {
+                Destroy(gameObject);
+            }
+            else
+            {
+                collision.gameObject.GetComponent<PlayerMovement>().die();
+
+            }
         }
     }
 

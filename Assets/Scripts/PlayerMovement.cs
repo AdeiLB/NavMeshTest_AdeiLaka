@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public bool attacking;
     NavMeshAgent navMesagent;
     // Start is called before the first frame update
     void Start()
@@ -23,19 +24,26 @@ public class PlayerMovement : MonoBehaviour
         {
             navMesagent.SetDestination(raycastHit.point);
         }
+
+        if(Input.GetMouseButton(1)&& !attacking)
+        {
+            StartCoroutine(attack());
+        }
+       
     }
 
-    private void OnMouseDown()
-    {
-        if(Input.GetMouseButton(1))
-        {
-            //attack
-        }
-    }
 
 
     public void die()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public IEnumerator attack()
+    {
+        attacking = true;
+        yield return new WaitForSeconds(1.5f);
+        attacking = false;
+
     }
 }
